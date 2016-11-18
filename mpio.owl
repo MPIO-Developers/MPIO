@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/mpio/dev/mpio.owl/"
+     xml:base="http://purl.obolibrary.org/obo/mpio/dev/mpio.owl/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mpio/dev/mpio.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2015-02-23/ontology-metadata.owl"/>
+        <rdfs:label xml:lang="en">Minimum PDDI Information Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPIO_0000001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/MPIO_0000001">
+        <rdfs:label xml:lang="en">MPIO user-centered definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPIO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112 xml:lang="en">“A number of factors have been associated with an increased risk of hyperkalemia. These include impaired renal function, diabetes mellitus, infrequent serum potassium monitoring, baseline serum potassium level, angiotensin converting enzyme inhibitors (ACEIs), angiotensin receptor blockers (ARBs). (Henz S et al. Nephrol Dial Transplant. 2008;23:3939-45; Eschmann E et al. Eur J Clin Pharmacol. 2014;70:215-23; Indermitte J et al. Drug Safety. 2007;30:71-80.)”</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">“Both corticosteroids and aldosterone antagonists have been shown to substantially increase the risk of UGIB in patients on NSAIDs, with relative risks of 12.8 and 11 respectively compared to a risk of 4.3 with NSAIDs alone (Masclee et al. Gastroenterology. 2014;147:784-92.)”</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is about factors known to effect the pharmacodynamics and pharmacokinetics of a drug.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">contextual information/modifying factors</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxkZGlrcmFuZGlyfGd4OjUzNzBkOGYzN2NkYWQ3OWY</obo:IAO_0000119>
+        <obo:MPIO_0000001 xml:lang="en">Factors such as patient age, patient health conditions, treatment dosage form, or concurrent medications that might alter the risk of a drug-drug interaction clinical consequence or its seriousness.</obo:MPIO_0000001>
+        <rdfs:label xml:lang="en">modifying factors information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPIO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000002">
+        <obo:IAO_0000119 xml:lang="en">https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxkZGlrcmFuZGlyfGd4OjdhOGVkMzY5MzgxNzkw</obo:IAO_0000119>
+        <obo:MPIO_0000001 xml:lang="en">Changes in patient health status from baseline that can be observed or measured by a clinician or reported by a patient.</obo:MPIO_0000001>
+        <rdfs:label xml:lang="en">clinical consequences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPIO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MPIO_0000002"/>
+        <obo:IAO_0000112 xml:lang="en">An acute hypertensive reaction may be a clinical consequence of epinephrine given in the presence of beta-blockade.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">An acute upper gastrointestinal bleed or other bleeding event may be a clinical consequence of NSAIDs taken in conjunction with warfarin.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Boosting of the antiretroviral effect of darunavir is a clinical consequence of co-administration with cobicistat.</obo:IAO_0000112>
+        <obo:IAO_0000119 xml:lang="en">https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxkZGlrcmFuZGlyfGd4OjdhOGVkMzY5MzgxNzkw</obo:IAO_0000119>
+        <obo:MPIO_0000001 xml:lang="en">Changes in patient health status from baseline that can be observed or measured by a clinician or reported by a patient and that may be the result of co-administration of two or more drugs that may are known to interact.</obo:MPIO_0000001>
+        <rdfs:label xml:lang="en">clinical consequences suspected to be the result of a drug-drug interaction</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
