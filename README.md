@@ -1,7 +1,9 @@
 # MPIO
 Minimum PDDI Information Ontology
 
+------------------------------------------------------------
 License
+------------------------------------------------------------
 
 The DIDEO is made available under the Creative Commons Attribution 4.0
 International Public License. A copy of the license is available in
