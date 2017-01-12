@@ -49,7 +49,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000112 xml:lang="en">“A number of factors have been associated with an increased risk of hyperkalemia. These include impaired renal function, diabetes mellitus, infrequent serum potassium monitoring, baseline serum potassium level, angiotensin converting enzyme inhibitors (ACEIs), angiotensin receptor blockers (ARBs). (Henz S et al. Nephrol Dial Transplant. 2008;23:3939-45; Eschmann E et al. Eur J Clin Pharmacol. 2014;70:215-23; Indermitte J et al. Drug Safety. 2007;30:71-80.)”</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">“A number of factors have been associated with an increased risk of hyperkalemia. These include impaired renal function, diabetes mellitus, infrequent serum potassium monitoring, baseline serum potassium level, angiotensin converting enzyme inhibitors (ACEIs), angiotensin receptor blockers (ARBs).&quot; (Henz S et al. Nephrol Dial Transplant. 2008;23:3939-45; Eschmann E et al. Eur J Clin Pharmacol. 2014;70:215-23; Indermitte J et al. Drug Safety. 2007;30:71-80.)”</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">“Both corticosteroids and aldosterone antagonists have been shown to substantially increase the risk of UGIB in patients on NSAIDs, with relative risks of 12.8 and 11 respectively compared to a risk of 4.3 with NSAIDs alone (Masclee et al. Gastroenterology. 2014;147:784-92.)”</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is about factors known to affect the pharmacodynamics and pharmacokinetics of a drug.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">contextual information/modifying factors</obo:IAO_0000118>
@@ -89,6 +89,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000112 xml:lang="en">&quot;Both corticosteroids and aldosterone antagonists have been shown to substantially increase the risk of UGIB in patients on NSAIDs, with relative risks of 12.8 and 11 respectively compared to a risk of 4.3 with NSAIDs alone.&quot;</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">“A crossover study in 36 healthy subjects found that aspirin 325 mg daily for two doses had no effect on the pharmacokinetics of a single 80-mg dose of tapentadol”</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">“Colestyramine and colestipol do not appear to have any clinically important effects on the absorption of aspirin.”</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An information content entity that provides support for or refutation of a drug-drug interaction statement.</obo:IAO_0000115>
         <obo:MPIO_0000001 xml:lang="en">The support for or refutation of a drug-drug interaction in humans; it may be data resulting from clinical studies, clinical observation or physiological experiments, or it may be an extrapolation based on drug-drug interaction mechanisms.</obo:MPIO_0000001>
         <rdfs:label xml:lang="en">suspected drug-drug interaction evidence</rdfs:label>
@@ -129,9 +131,23 @@
         <obo:MPIO_0000001 xml:lang="en">The number of individuals within a cohort that are exposed to a drug-drug interaction over a specified time period divided by the total number of patients in the cohort.</obo:MPIO_0000001>
         <rdfs:label xml:lang="en">frequency of exposure information</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPIO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112 xml:lang="en">&quot;Evidence-based strategy to mitigate the potential clinical consequences of a drug-drug interaction; e.g., use only if benefit outweighs risk, assess risk and take action if necessary, no special precautions.&quot;</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">&quot;Use only if benefit outweighs risk:  “When a systemic dose of epinephrine is given to a person on one of these nonselective beta-blockers, an acute hypertensive reaction is almost certain. Systolic BPs of 250 mm/Hg are not uncommon. Most people can probably withstand a short episode of such a hypertensive reaction without permanent sequelae, but strokes have occurred in susceptible patients. Thus, it is best to avoid this reaction if possible. If a patient is likely to receive systemic epinephrine, it would be prudent to use a cardioselective beta-blocker.” (Title: Individualized Drug Interaction Alerts; Authors: Daniel C. Malone , University of Arizona; John Horn, Philip Hansten, University of Washington)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">No precaution:  “If the NSAID is being used as an analgesic or antipyretic, it would be prudent to use an alternative such as acetaminophen. In some people, acetaminophen can increase the anticoagulant effect of warfarin, so monitor the INR if acetaminophen is used in doses over 2 g/day for a few days. For more severe pain consider short-term opioids in place of the NSAID.“ (Title: Individualized Drug Interaction Alerts; Authors: Daniel C. Malone , University of Arizona; John Horn, Philip Hansten, University of Washington)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that describes an evidence-based strategy that should be adopted to mitigate the potential clinical consequences of a drug-drug interaction.</obo:IAO_0000115>
+        <obo:MPIO_0000001>Evidence-based strategy to mitigate the potential clinical consequences of a drug-drug interaction; e.g., use only if benefit outweighs risk, assess risk and take action if necessary, no special precautions.</obo:MPIO_0000001>
+        <rdfs:label xml:lang="en">recommended action</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
