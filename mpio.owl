@@ -63,9 +63,11 @@
     <!-- http://purl.obolibrary.org/obo/MPIO_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is about changes in the patient health status from baseline that can be observed or measured by a clinician or be reported by the patient.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxkZGlrcmFuZGlyfGd4OjdhOGVkMzY5MzgxNzkw</obo:IAO_0000119>
         <obo:MPIO_0000001 xml:lang="en">Changes in patient health status from baseline that can be observed or measured by a clinician or reported by a patient.</obo:MPIO_0000001>
-        <rdfs:label xml:lang="en">clinical consequences</rdfs:label>
+        <rdfs:label xml:lang="en">clinical consequences information</rdfs:label>
     </owl:Class>
     
 
@@ -77,9 +79,10 @@
         <obo:IAO_0000112 xml:lang="en">An acute hypertensive reaction may be a clinical consequence of epinephrine given in the presence of beta-blockade.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">An acute upper gastrointestinal bleed or other bleeding event may be a clinical consequence of NSAIDs taken in conjunction with warfarin.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Boosting of the antiretroviral effect of darunavir is a clinical consequence of co-administration with cobicistat.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is about changes in patient health status from baseline that can be observed or measured by a clinician or reported by a patient and that may be the result of co-administration of two or more drugs that may interact.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxkZGlrcmFuZGlyfGd4OjdhOGVkMzY5MzgxNzkw</obo:IAO_0000119>
         <obo:MPIO_0000001 xml:lang="en">Changes in patient health status from baseline that can be observed or measured by a clinician or reported by a patient and that may be the result of co-administration of two or more drugs that may interact.</obo:MPIO_0000001>
-        <rdfs:label xml:lang="en">clinical consequences suspected to be the result of a drug-drug interaction</rdfs:label>
+        <rdfs:label xml:lang="en">information about clinical consequences suspected to be the result of a drug-drug interaction</rdfs:label>
     </owl:Class>
     
 
@@ -144,6 +147,40 @@
         <obo:IAO_0000115 xml:lang="en">An information content entity that describes an evidence-based strategy that should be adopted to mitigate the potential clinical consequences of a drug-drug interaction.</obo:IAO_0000115>
         <obo:MPIO_0000001>Evidence-based strategy to mitigate the potential clinical consequences of a drug-drug interaction; e.g., use only if benefit outweighs risk, assess risk and take action if necessary, no special precautions.</obo:MPIO_0000001>
         <rdfs:label xml:lang="en">recommended action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPIO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112 xml:lang="en">Risk of increase of serious infections</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Risk of serious arrhythmias, even lethal ones with the calcium salts
+administered via IV</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Serious ventricular arrhythmias due to increased cardiac sensitization</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Unpredictable hemorrhage, possibly serious</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that reports the degree to which a clinical consequence of a drug-drug interaction results in harm determining the type and speed of clinician intervention needed.</obo:IAO_0000115>
+        <obo:MPIO_0000001 xml:lang="en">The degree to which a drug-drug interaction clinical consequence may result in harm and that will determine the type and speed of clinician intervention.</obo:MPIO_0000001>
+        <rdfs:label xml:lang="en">seriousness information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPIO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112 xml:lang="en">Doubling of the concentrations of ambrisentan, with increase of the
+vasodilator effect (severe headaches )</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Increase of the hypotensive effect. Risk of severe orthostatic
+hypotension.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Risk of severe hypocalcemia</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Severe hypotension and loss of consciousness have been reported when
+ondansetron is administered with apomorphine</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity about the intensity of a clinical consequence of a drug-drug interaction.</obo:IAO_0000115>
+        <obo:MPIO_0000001 xml:lang="en">The intensity of a drug-drug interaction clinical consequence.</obo:MPIO_0000001>
+        <rdfs:label xml:lang="en">severity information</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
