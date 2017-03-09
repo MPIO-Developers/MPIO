@@ -155,11 +155,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000112 xml:lang="en">Risk of increase of serious infections</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">Risk of serious arrhythmias, even lethal ones with the calcium salts
-administered via IV</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">Serious ventricular arrhythmias due to increased cardiac sensitization</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">Unpredictable hemorrhage, possibly serious</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Atorvastatin is subject to drug-drug interactions with cytochrome P450 3A4 (CYP3A4) inhibitors. Increased exposure due to CYP3A4 inhibition may lead to serious adverse events (AEs), including rhabdomyolysis
+
+Khalilieh, Sauzanne, et al. &quot;Results of a doravirine-atorvastatin drug-drug interaction study.&quot; Antimicrobial Agents and Chemotherapy (2016): AAC-01364.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Drug-drug interactions with insulin secretagogues are associated with increased risk of serious hypoglycemia in patients with type 2 diabetes
+
+Han, Xu, et al. &quot;Biomedical Informatics Approaches to Identifying Drug-Drug Interactions: Application to Insulin Secretagogues.&quot; Epidemiology (2017).</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Nevertheless, long-term combination therapy with immunomodulators and anti-TNFα agents may be associated with increased risks of serious infections and malignancies.
+
+Xu, Zhenhua, Hugh M. Davis, and Honghui Zhou. &quot;Clinical impact of concomitant immunomodulators on biologic therapy: pharmacokinetics, immunogenicity, efficacy and safety.&quot; The Journal of Clinical Pharmacology 55.S3 (2015): S60-S74.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Twenty-four healthy volunteers (11 males) were enrolled. All but 1 subject completed the trial, and no serious adverse events were reported
+
+Blonk, Maren, et al. &quot;Pharmacokinetic Drug–Drug Interaction Study Between Raltegravir and Atorvastatin 20 mg in Healthy Volunteers.&quot; JAIDS Journal of Acquired Immune Deficiency Syndromes 69.1 (2015): 44-51.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An information content entity that reports the degree to which a clinical consequence of a drug-drug interaction results in harm determining the type and speed of clinician intervention needed.</obo:IAO_0000115>
         <obo:MPIO_0000001 xml:lang="en">The degree to which a drug-drug interaction clinical consequence may result in harm and that will determine the type and speed of clinician intervention.</obo:MPIO_0000001>
         <rdfs:label xml:lang="en">seriousness information</rdfs:label>
@@ -171,13 +178,18 @@ administered via IV</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000112 xml:lang="en">Doubling of the concentrations of ambrisentan, with increase of the
-vasodilator effect (severe headaches )</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">Increase of the hypotensive effect. Risk of severe orthostatic
-hypotension.</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">Risk of severe hypocalcemia</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">Severe hypotension and loss of consciousness have been reported when
-ondansetron is administered with apomorphine</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">All the treatment-emergent adverse events were mild. Mirabegron 50 mg was considered to be safe and well tolerated when coadministered with tolterodine 4 mg in healthy postmenopausal female volunteers.
+
+Nomura, Yuki, et al. &quot;Pharmacokinetic drug interaction study between overactive bladder drugs mirabegron and tolterodine in Japanese healthy postmenopausal females.&quot; Drug Metabolism and Pharmacokinetics 31.6 (2016): 411-416.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">By a cumulative dose of 1500 mg paclitaxel, 35% of the patients had developed severe neuropathy. The overall hazard ratio between clopidogrel use and severe paclitaxel neuropathy was 1.7 (95% CI, 0.9-3.0).
+
+Agergaard, K., et al. &quot;Clopidogrel paclitaxel drug‐drug interaction: A pharmacoepidemiologic study.&quot; Clinical Pharmacology &amp; Therapeutics (2017).</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Combination lithium, a mood stabilizer, and risperidone, an atypical antipsychotic drug, is widely used for treatment of psychotic disorders. Rare reports concern severe adverse drug reaction in multiple organic systems with their combined use. We report two episodes of neurotoxicity and nephrotoxicity in a patient following the combined use of lithium and risperidone.
+
+Hsu, Chih-Wei, et al. &quot;Neurotoxicity and nephrotoxicity caused by combined use of lithium and risperidone: a case report and literature review.&quot; BMC Pharmacology and Toxicology 17.1 (2016): 59.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">In 2015, European and U.S. health agencies issued warning letters in response to 9 reported clinical cases of severe bradycardia/bradyarrhythmia in hepatitis C virus (HCV)-infected patients treated with sofosbuvir (SOF) in combination with other direct acting antivirals (DAAs) and the antiarrhythmic drug, amiodarone (AMIO)
+
+Regan, Christopher P., et al. &quot;Assessment of the clinical cardiac drug‐drug interaction associated with the combination of hepatitis C virus nucleotide inhibitors and amiodarone in guinea pigs and rhesus monkeys.&quot; Hepatology 64.5 (2016): 1430-1441.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An information content entity about the intensity of a clinical consequence of a drug-drug interaction.</obo:IAO_0000115>
         <obo:MPIO_0000001 xml:lang="en">The intensity of a drug-drug interaction clinical consequence.</obo:MPIO_0000001>
         <rdfs:label xml:lang="en">severity information</rdfs:label>
