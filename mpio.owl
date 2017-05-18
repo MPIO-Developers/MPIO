@@ -1,16 +1,31 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/mpio/dev/mpio.owl/"
-     xml:base="http://purl.obolibrary.org/obo/mpio/dev/mpio.owl/"
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY purl "http://purl.obolibrary.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY obo2 "http://purl.obolibrary.org/obo#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;mpio/dev/mpio.owl/"
+     xml:base="&obo;mpio/dev/mpio.owl/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:obo2="http://purl.obolibrary.org/obo#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:purl="http://purl.obolibrary.org#"
      xmlns:obo="http://purl.obolibrary.org/obo/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mpio/dev/mpio.owl">
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2015-02-23/ontology-metadata.owl"/>
+    <owl:Ontology rdf:about="&obo;mpio/dev/mpio.owl">
         <rdfs:label xml:lang="en">Minimum PDDI Information Ontology</rdfs:label>
+        <owl:imports rdf:resource="&obo;iao/2015-02-23/ontology-metadata.owl"/>
     </owl:Ontology>
     
 
@@ -26,11 +41,126 @@
     
 
 
+    <!-- http://purl.obolibrary.org#Definition -->
+
+    <rdf:Description rdf:about="&purl;Definition">
+        <rdfs:label xml:lang="en">Definition</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo#Synonym -->
+
+    <rdf:Description rdf:about="&obo2;Synonym">
+        <rdfs:label xml:lang="en">Synonym</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000112">
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000115">
+        <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">textual definition</rdfs:label>
+        <rdfs:label>textual definition</rdfs:label>
+        <rdfs:label>definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000116">
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000117">
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000119">
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MPIO_0000001 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/MPIO_0000001">
+    <owl:AnnotationProperty rdf:about="&obo;MPIO_0000001">
         <rdfs:label xml:lang="en">MPIO user-centered definition</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <rdf:Description rdf:about="&rdfs;label">
+        <rdfs:label>label</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="&obo;IAO_0000136">
+        <rdfs:label xml:lang="en">is about</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/iao.owl</obo:IAO_0000412>
+        <obo:IAO_0000116 xml:lang="en">7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of &quot;mentions&quot; relation. Weaken the is_about relationship to be primitive. 
+
+We will try to build it back up by elaborating the various subproperties that are more precisely defined.
+
+Some currently missing phenomena that should be considered &quot;about&quot; are predications - &quot;The only person who knows the answer is sitting beside me&quot; , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
+        <obo:IAO_0000112 xml:lang="en">This document is about information artifacts and their representations</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">is_about is a (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
     
 
 
@@ -45,116 +175,167 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DIDEO_00000030 -->
+
+    <owl:Class rdf:about="&obo;DIDEO_00000030">
+        <rdfs:label xml:lang="en">drug-drug interaction effect</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/dideo.owl</obo:IAO_0000412>
+        <obo:IAO_0000115 xml:lang="en">An entity that is the result of a drug-drug interaction.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000003 -->
+
+    <owl:Class rdf:about="&obo;DINTO_000003">
+        <rdfs:label xml:lang="en">DDI mechanism</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/DINTO.owl</obo:IAO_0000412>
+        <purl:Definition xml:lang="en">The process or processes by which one drug B alters the disposition and/or effect of another drug A.</purl:Definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000027 -->
+
+    <owl:Class rdf:about="&obo;DINTO_000027">
+        <rdfs:label xml:lang="en">clinically relevant DDI effect</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/DINTO.owl</obo:IAO_0000412>
+        <purl:Definition xml:lang="en">A clinically relevant DDI effect is a DDI Effect that has clinical relevance for the patient clinical status or therapeutic outcome.</purl:Definition>
+        <obo2:Synonym xml:lang="en">significant DDI effect</obo2:Synonym>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MPIO_0000000 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000112 xml:lang="en">“A number of factors have been associated with an increased risk of hyperkalemia. These include impaired renal function, diabetes mellitus, infrequent serum potassium monitoring, baseline serum potassium level, angiotensin converting enzyme inhibitors (ACEIs), angiotensin receptor blockers (ARBs).&quot; (Henz S et al. Nephrol Dial Transplant. 2008;23:3939-45; Eschmann E et al. Eur J Clin Pharmacol. 2014;70:215-23; Indermitte J et al. Drug Safety. 2007;30:71-80.)”</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">“Both corticosteroids and aldosterone antagonists have been shown to substantially increase the risk of UGIB in patients on NSAIDs, with relative risks of 12.8 and 11 respectively compared to a risk of 4.3 with NSAIDs alone (Masclee et al. Gastroenterology. 2014;147:784-92.)”</obo:IAO_0000112>
+    <owl:Class rdf:about="&obo;MPIO_0000000">
+        <rdfs:label xml:lang="en">modifying factors information</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is about factors known to affect the pharmacodynamics and pharmacokinetics of a drug.</obo:IAO_0000115>
+        <obo:MPIO_0000001 xml:lang="en">Factors such as patient age, patient health conditions, treatment dosage form, or concurrent medications that might alter the risk of a drug-drug interaction clinical consequence or its seriousness.</obo:MPIO_0000001>
         <obo:IAO_0000118 xml:lang="en">contextual information/modifying factors</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxkZGlrcmFuZGlyfGd4OjUzNzBkOGYzN2NkYWQ3OWY</obo:IAO_0000119>
-        <obo:MPIO_0000001 xml:lang="en">Factors such as patient age, patient health conditions, treatment dosage form, or concurrent medications that might alter the risk of a drug-drug interaction clinical consequence or its seriousness.</obo:MPIO_0000001>
-        <rdfs:label xml:lang="en">modifying factors information</rdfs:label>
+        <obo:IAO_0000112 xml:lang="en">“A number of factors have been associated with an increased risk of hyperkalemia. These include impaired renal function, diabetes mellitus, infrequent serum potassium monitoring, baseline serum potassium level, angiotensin converting enzyme inhibitors (ACEIs), angiotensin receptor blockers (ARBs).&quot; (Henz S et al. Nephrol Dial Transplant. 2008;23:3939-45; Eschmann E et al. Eur J Clin Pharmacol. 2014;70:215-23; Indermitte J et al. Drug Safety. 2007;30:71-80.)”</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">“Both corticosteroids and aldosterone antagonists have been shown to substantially increase the risk of UGIB in patients on NSAIDs, with relative risks of 12.8 and 11 respectively compared to a risk of 4.3 with NSAIDs alone (Masclee et al. Gastroenterology. 2014;147:784-92.)”</obo:IAO_0000112>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MPIO_0000002 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">An information content entity that is about changes in the patient health status from baseline that can be observed or measured by a clinician or be reported by the patient.</obo:IAO_0000115>
-        <obo:IAO_0000119 xml:lang="en">https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxkZGlrcmFuZGlyfGd4OjdhOGVkMzY5MzgxNzkw</obo:IAO_0000119>
-        <obo:MPIO_0000001 xml:lang="en">Changes in patient health status from baseline that can be observed or measured by a clinician or reported by a patient.</obo:MPIO_0000001>
+    <owl:Class rdf:about="&obo;MPIO_0000002">
         <rdfs:label xml:lang="en">clinical consequences information</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is about changes in the patient health status from baseline that can be observed or measured by a clinician or be reported by the patient.</obo:IAO_0000115>
+        <obo:MPIO_0000001 xml:lang="en">Changes in patient health status from baseline that can be observed or measured by a clinician or reported by a patient.</obo:MPIO_0000001>
+        <obo:IAO_0000119 xml:lang="en">https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxkZGlrcmFuZGlyfGd4OjdhOGVkMzY5MzgxNzkw</obo:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MPIO_0000003 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MPIO_0000002"/>
+    <owl:Class rdf:about="&obo;MPIO_0000003">
+        <rdfs:label xml:lang="en">information about clinical consequences suspected to be the result of a drug-drug interaction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MPIO_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;DIDEO_00000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;DINTO_000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">An acute hypertensive reaction may be a clinical consequence of epinephrine given in the presence of beta-blockade.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">An acute upper gastrointestinal bleed or other bleeding event may be a clinical consequence of NSAIDs taken in conjunction with warfarin.</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">Boosting of the antiretroviral effect of darunavir is a clinical consequence of co-administration with cobicistat.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is about changes in patient health status from baseline that can be observed or measured by a clinician or reported by a patient and that may be the result of co-administration of two or more drugs that may interact.</obo:IAO_0000115>
-        <obo:IAO_0000119 xml:lang="en">https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxkZGlrcmFuZGlyfGd4OjdhOGVkMzY5MzgxNzkw</obo:IAO_0000119>
+        <obo:IAO_0000112 xml:lang="en">Boosting of the antiretroviral effect of darunavir is a clinical consequence of co-administration with cobicistat.</obo:IAO_0000112>
         <obo:MPIO_0000001 xml:lang="en">Changes in patient health status from baseline that can be observed or measured by a clinician or reported by a patient and that may be the result of co-administration of two or more drugs that may interact.</obo:MPIO_0000001>
-        <rdfs:label xml:lang="en">information about clinical consequences suspected to be the result of a drug-drug interaction</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxkZGlrcmFuZGlyfGd4OjdhOGVkMzY5MzgxNzkw</obo:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MPIO_0000004 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <owl:Class rdf:about="&obo;MPIO_0000004">
+        <rdfs:label xml:lang="en">suspected drug-drug interaction evidence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <obo:IAO_0000112 xml:lang="en">&quot;Both corticosteroids and aldosterone antagonists have been shown to substantially increase the risk of UGIB in patients on NSAIDs, with relative risks of 12.8 and 11 respectively compared to a risk of 4.3 with NSAIDs alone.&quot;</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">“A crossover study in 36 healthy subjects found that aspirin 325 mg daily for two doses had no effect on the pharmacokinetics of a single 80-mg dose of tapentadol”</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">“Colestyramine and colestipol do not appear to have any clinically important effects on the absorption of aspirin.”</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An information content entity that provides support for or refutation of a drug-drug interaction statement.</obo:IAO_0000115>
         <obo:MPIO_0000001 xml:lang="en">The support for or refutation of a drug-drug interaction in humans; it may be data resulting from clinical studies, clinical observation or physiological experiments, or it may be an extrapolation based on drug-drug interaction mechanisms.</obo:MPIO_0000001>
-        <rdfs:label xml:lang="en">suspected drug-drug interaction evidence</rdfs:label>
+        <obo:IAO_0000112 xml:lang="en">“A crossover study in 36 healthy subjects found that aspirin 325 mg daily for two doses had no effect on the pharmacokinetics of a single 80-mg dose of tapentadol”</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">“Colestyramine and colestipol do not appear to have any clinically important effects on the absorption of aspirin.”</obo:IAO_0000112>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MPIO_0000005 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <owl:Class rdf:about="&obo;MPIO_0000005">
+        <rdfs:label xml:lang="en">mechanism of interaction information</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;DINTO_000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:MPIO_0000001 xml:lang="en">An assertion about the process or the processes by which a drug-drug interaction clinical consequence occurs.</obo:MPIO_0000001>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is about the process or processes by which a drug-drug interaction clinical consequence occurs</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">Non-steroidal anti-inflammatory drugs (NSAIDs) have antiplatelet effects which increase the bleeding risk when combined with oral anticoagulants such as warfarin. The antiplatelet effect of NSAIDs lasts only as long as the NSAID is present in the circulation, unlike aspirin’s antiplatelet effect, which lasts for up to 2 weeks after aspirin is discontinued.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Timolol is a nonselective beta-blocker, and timolol eye drops have been shown to produce systemic beta-blockade. Timolol is metabolized by CYP2D6, and patients who are deficient in CYP2D6 (PMs) have been shown to develop higher timolol plasma concentrations following timolol ophthalmic aqueous drops.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">An information content entity that is about the process or processes by which a drug-drug interaction clinical consequence occurs</obo:IAO_0000115>
-        <obo:MPIO_0000001 xml:lang="en">An assertion about the process or the processes by which a drug-drug interaction clinical consequence occurs.</obo:MPIO_0000001>
-        <rdfs:label xml:lang="en">mechanism of interaction information</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MPIO_0000006 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <owl:Class rdf:about="&obo;MPIO_0000006">
+        <rdfs:label xml:lang="en">frequency of harm information</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <obo:IAO_0000112 xml:lang="en">Among 2,427 patients co-prescribed either clarithromycin or erythromycin and a statin metabolized by CYP3A4, 47 had a clinical consequence of hospitalization for acute kidney injury, for a frequency of harm of 1.9%.</obo:IAO_0000112>
         <obo:MPIO_0000001 xml:lang="en">The number of individuals within a cohort that experience a drug-drug interaction clinical consequence divided by the total number of patients co-exposed to the drugs that are involved in the interaction.</obo:MPIO_0000001>
-        <rdfs:label xml:lang="en">frequency of harm information</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MPIO_0000007 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <owl:Class rdf:about="&obo;MPIO_0000007">
+        <rdfs:label xml:lang="en">frequency of exposure information</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <obo:IAO_0000112 xml:lang="en">Among 2712 patients age 65 or older recruited at hospital admission and exposed to at least one potential drug drug interaction, 1642 patients were exposed to at least one potentially moderate drug drug interaction, for a frequency of exposure of 60.5%.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An information content entity that mentions both the number of individuals within a cohort that are exposed to a drug-drug interaction over a specified time period and the total number of patients in the cohort.</obo:IAO_0000115>
         <obo:MPIO_0000001 xml:lang="en">The number of individuals within a cohort that are exposed to a drug-drug interaction over a specified time period divided by the total number of patients in the cohort.</obo:MPIO_0000001>
-        <rdfs:label xml:lang="en">frequency of exposure information</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MPIO_0000008 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <owl:Class rdf:about="&obo;MPIO_0000008">
+        <rdfs:label xml:lang="en">recommended action</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <obo:IAO_0000112 xml:lang="en">&quot;Evidence-based strategy to mitigate the potential clinical consequences of a drug-drug interaction; e.g., use only if benefit outweighs risk, assess risk and take action if necessary, no special precautions.&quot;</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">&quot;Use only if benefit outweighs risk:  “When a systemic dose of epinephrine is given to a person on one of these nonselective beta-blockers, an acute hypertensive reaction is almost certain. Systolic BPs of 250 mm/Hg are not uncommon. Most people can probably withstand a short episode of such a hypertensive reaction without permanent sequelae, but strokes have occurred in susceptible patients. Thus, it is best to avoid this reaction if possible. If a patient is likely to receive systemic epinephrine, it would be prudent to use a cardioselective beta-blocker.” (Title: Individualized Drug Interaction Alerts; Authors: Daniel C. Malone , University of Arizona; John Horn, Philip Hansten, University of Washington)</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">No precaution:  “If the NSAID is being used as an analgesic or antipyretic, it would be prudent to use an alternative such as acetaminophen. In some people, acetaminophen can increase the anticoagulant effect of warfarin, so monitor the INR if acetaminophen is used in doses over 2 g/day for a few days. For more severe pain consider short-term opioids in place of the NSAID.“ (Title: Individualized Drug Interaction Alerts; Authors: Daniel C. Malone , University of Arizona; John Horn, Philip Hansten, University of Washington)</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An information content entity that describes an evidence-based strategy that should be adopted to mitigate the potential clinical consequences of a drug-drug interaction.</obo:IAO_0000115>
         <obo:MPIO_0000001>Evidence-based strategy to mitigate the potential clinical consequences of a drug-drug interaction; e.g., use only if benefit outweighs risk, assess risk and take action if necessary, no special precautions.</obo:MPIO_0000001>
-        <rdfs:label xml:lang="en">recommended action</rdfs:label>
+        <obo:IAO_0000112 xml:lang="en">No precaution:  “If the NSAID is being used as an analgesic or antipyretic, it would be prudent to use an alternative such as acetaminophen. In some people, acetaminophen can increase the anticoagulant effect of warfarin, so monitor the INR if acetaminophen is used in doses over 2 g/day for a few days. For more severe pain consider short-term opioids in place of the NSAID.“ (Title: Individualized Drug Interaction Alerts; Authors: Daniel C. Malone , University of Arizona; John Horn, Philip Hansten, University of Washington)</obo:IAO_0000112>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MPIO_0000009 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <owl:Class rdf:about="&obo;MPIO_0000009">
+        <rdfs:label xml:lang="en">seriousness information</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that reports the degree to which a clinical consequence of a drug-drug interaction results in harm determining the type and speed of clinician intervention needed.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">Atorvastatin is subject to drug-drug interactions with cytochrome P450 3A4 (CYP3A4) inhibitors. Increased exposure due to CYP3A4 inhibition may lead to serious adverse events (AEs), including rhabdomyolysis
 
 Khalilieh, Sauzanne, et al. &quot;Results of a doravirine-atorvastatin drug-drug interaction study.&quot; Antimicrobial Agents and Chemotherapy (2016): AAC-01364.</obo:IAO_0000112>
@@ -164,23 +345,23 @@ Han, Xu, et al. &quot;Biomedical Informatics Approaches to Identifying Drug-Drug
         <obo:IAO_0000112 xml:lang="en">Nevertheless, long-term combination therapy with immunomodulators and anti-TNFα agents may be associated with increased risks of serious infections and malignancies.
 
 Xu, Zhenhua, Hugh M. Davis, and Honghui Zhou. &quot;Clinical impact of concomitant immunomodulators on biologic therapy: pharmacokinetics, immunogenicity, efficacy and safety.&quot; The Journal of Clinical Pharmacology 55.S3 (2015): S60-S74.</obo:IAO_0000112>
+        <obo:MPIO_0000001 xml:lang="en">The degree to which a drug-drug interaction clinical consequence may result in harm and that will determine the type and speed of clinician intervention.</obo:MPIO_0000001>
         <obo:IAO_0000112 xml:lang="en">Twenty-four healthy volunteers (11 males) were enrolled. All but 1 subject completed the trial, and no serious adverse events were reported
 
 Blonk, Maren, et al. &quot;Pharmacokinetic Drug–Drug Interaction Study Between Raltegravir and Atorvastatin 20 mg in Healthy Volunteers.&quot; JAIDS Journal of Acquired Immune Deficiency Syndromes 69.1 (2015): 44-51.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">An information content entity that reports the degree to which a clinical consequence of a drug-drug interaction results in harm determining the type and speed of clinician intervention needed.</obo:IAO_0000115>
-        <obo:MPIO_0000001 xml:lang="en">The degree to which a drug-drug interaction clinical consequence may result in harm and that will determine the type and speed of clinician intervention.</obo:MPIO_0000001>
-        <rdfs:label xml:lang="en">seriousness information</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MPIO_0000010 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <owl:Class rdf:about="&obo;MPIO_0000010">
+        <rdfs:label xml:lang="en">severity information</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <obo:IAO_0000112 xml:lang="en">All the treatment-emergent adverse events were mild. Mirabegron 50 mg was considered to be safe and well tolerated when coadministered with tolterodine 4 mg in healthy postmenopausal female volunteers.
 
 Nomura, Yuki, et al. &quot;Pharmacokinetic drug interaction study between overactive bladder drugs mirabegron and tolterodine in Japanese healthy postmenopausal females.&quot; Drug Metabolism and Pharmacokinetics 31.6 (2016): 411-416.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity about the intensity of a clinical consequence of a drug-drug interaction.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">By a cumulative dose of 1500 mg paclitaxel, 35% of the patients had developed severe neuropathy. The overall hazard ratio between clopidogrel use and severe paclitaxel neuropathy was 1.7 (95% CI, 0.9-3.0).
 
 Agergaard, K., et al. &quot;Clopidogrel paclitaxel drug‐drug interaction: A pharmacoepidemiologic study.&quot; Clinical Pharmacology &amp; Therapeutics (2017).</obo:IAO_0000112>
@@ -190,13 +371,11 @@ Hsu, Chih-Wei, et al. &quot;Neurotoxicity and nephrotoxicity caused by combined 
         <obo:IAO_0000112 xml:lang="en">In 2015, European and U.S. health agencies issued warning letters in response to 9 reported clinical cases of severe bradycardia/bradyarrhythmia in hepatitis C virus (HCV)-infected patients treated with sofosbuvir (SOF) in combination with other direct acting antivirals (DAAs) and the antiarrhythmic drug, amiodarone (AMIO)
 
 Regan, Christopher P., et al. &quot;Assessment of the clinical cardiac drug‐drug interaction associated with the combination of hepatitis C virus nucleotide inhibitors and amiodarone in guinea pigs and rhesus monkeys.&quot; Hepatology 64.5 (2016): 1430-1441.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">An information content entity about the intensity of a clinical consequence of a drug-drug interaction.</obo:IAO_0000115>
         <obo:MPIO_0000001 xml:lang="en">The intensity of a drug-drug interaction clinical consequence.</obo:MPIO_0000001>
-        <rdfs:label xml:lang="en">severity information</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
 
