@@ -285,7 +285,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000112 xml:lang="en">Among 2,427 patients co-prescribed either clarithromycin or erythromycin and a statin metabolized by CYP3A4, 47 had a clinical consequence of hospitalization for acute kidney injury, for a frequency of harm of 1.9%.</obo:IAO_0000112>
-        <obo:MPIO_0000001 xml:lang="en">The number of individuals within a cohort that experience a drug-drug interaction clinical consequence divided by the total number of patients co-exposed to the drugs that are involved in the interaction.</obo:MPIO_0000001>
+        <obo:MPIO_0000001 xml:lang="en">The number of individuals within a cohort that experience a drug-drug interaction clinical consequence divided by the total number of individuals co-exposed to the drugs that are involved in the interaction.</obo:MPIO_0000001>
         <rdfs:label xml:lang="en">frequency of harm information</rdfs:label>
     </owl:Class>
     
