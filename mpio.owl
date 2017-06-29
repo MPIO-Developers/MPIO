@@ -297,7 +297,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000112 xml:lang="en">Among 2712 patients age 65 or older recruited at hospital admission and exposed to at least one potential drug drug interaction, 1642 patients were exposed to at least one potentially moderate drug drug interaction, for a frequency of exposure of 60.5%.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An information content entity that mentions both the number of individuals within a cohort that are exposed to a drug-drug interaction over a specified time period and the total number of individuals in the cohort.</obo:IAO_0000115>
-        <obo:MPIO_0000001 xml:lang="en">The number of individuals within a cohort that are exposed to a drug-drug interaction over a specified time period divided by the total number of patients in the cohort.</obo:MPIO_0000001>
+        <obo:MPIO_0000001 xml:lang="en">The number of individuals within a cohort that are exposed to a drug-drug interaction over a specified time period divided by the total number of individuals in the cohort.</obo:MPIO_0000001>
         <rdfs:label xml:lang="en">frequency of exposure information</rdfs:label>
     </owl:Class>
     
