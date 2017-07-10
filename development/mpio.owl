@@ -295,6 +295,20 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000033 -->
+
+    <owl:Class rdf:about="&obo;APOLLO_SV_00000033">
+        <rdfs:label xml:lang="en">counting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/apollo_sv/dev/apollo_sv.owl</obo:IAO_0000412>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Counting</obo:IAO_0000119>
+        <obo:IAO_0000600 xml:lang="en">The planned process of finding the number of elements in a finite set of objects.</obo:IAO_0000600>
+        <obo:IAO_0000115 xml:lang="en">The planned process of finding the number of elements in a finite set of objects.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DIDEO_00000030 -->
 
     <owl:Class rdf:about="&obo;DIDEO_00000030">
