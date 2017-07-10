@@ -18,6 +18,7 @@
         <rdfs:label xml:lang="en">Minimum PDDI (Potential Drug-Drug Interaction) Information Ontology</rdfs:label>
         <dc:creator xml:lang="en">Maria Herrero-Zazo</dc:creator>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
+        <dc:contributor xml:lang="en">Richard D. Boyce</dc:contributor>
     </owl:Ontology>
     
 
