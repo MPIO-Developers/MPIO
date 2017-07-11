@@ -630,6 +630,23 @@ editor = PRS
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000198 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000198">
+        <rdfs:label xml:lang="en">biological replicate role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000220"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">a reference participant role realized by equivalent treatment of participants</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">biological replicate</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/obi.owl</obo:IAO_0000412>
+        <obo:IAO_0000112 xml:lang="en">A member of a dose-time group; a patient in a given arm of a trial</obo:IAO_0000112>
+        <obo:IAO_0000119 xml:lang="en">OBI</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">Person:Jennifer Fostel</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">biological replicate role</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000220 -->
 
     <owl:Class rdf:about="&obo;OBI_0000220">
