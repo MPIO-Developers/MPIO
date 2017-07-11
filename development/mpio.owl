@@ -604,6 +604,32 @@ objectives is a planned process.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000097 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000097">
+        <rdfs:label xml:lang="en">participant under investigation role</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A role that is realized through the execution of a study design in which the bearer of the role participates and in which data about that bearer is collected.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">Human subjects in a clinical trial, rats in a toxicogenomics study, tissue cutlures subjected to drug tests, fish observed in an ecotoxicology study. 
+Parasite example: people are infected with a parasite which is then extracted; the particpant under investigation could be the parasite, the people, or a population of which the people are members, depending on the nature of the study.
+Lake example: a lake could realize this role in an investigation that assays pollution levels in samples of water taken from the lake.</obo:IAO_0000112>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">OBI</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/obi.owl</obo:IAO_0000412>
+        <obo:IAO_0000116>A participant can realize both &quot;specimen role&quot; and &quot;participant under investigation role&quot; at the same time. However &quot;participant under investigation role&quot; is distinct from &quot;specimen role&quot;, since a specimen could somehow be involved in an investigation without being the thing that is under investigation.</obo:IAO_0000116>
+        <obo:IAO_0000232 xml:lang="en">Following OBI call November 2012,26th:
+ 
+1. it was decided there was no need for moving the children class and making them siblings of study subject role.
+2. it also settles the disambiguation about &apos;study subject&apos;. This is about the individual participating in the investigation/study, Not the &apos;topic&apos; (as in &apos;toxicity study&apos;) of the investigation/study
+
+This note closes the issue and validates the class definition to be part of the OBI core
+editor = PRS
+</obo:IAO_0000232>
+        <obo:IAO_0000117 xml:lang="en">GROUP:  Role Branch</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">participant under investigation role</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
     <owl:Class rdf:about="&obo;OBI_0100026">
