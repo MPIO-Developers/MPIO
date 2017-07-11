@@ -196,6 +196,12 @@
     
 
 
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="&terms;description"/>
+    
+
+
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
     <rdf:Description rdf:about="&rdfs;label">
@@ -337,6 +343,19 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000115>has member is a mereological relation between a collection and an item.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">has member</obo:IAO_0000111>
         <obo:RO_0001900 rdf:resource="&obo;RO_0001901"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000095 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000095">
+        <rdfs:label xml:lang="en">is member of</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://semanticscience.org/ontology/sio.owl</obo:IAO_0000412>
+        <dc:identifier>SIO_000095</dc:identifier>
+        <terms:description xml:lang="en">is member of is a mereological relation between a item and a collection.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
