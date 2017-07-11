@@ -132,6 +132,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
     <rdf:Description rdf:about="&obo;IAO_0000118">
+        <rdfs:label>alternative term</rdfs:label>
         <rdfs:label xml:lang="en">alternative term</rdfs:label>
     </rdf:Description>
     
@@ -376,6 +377,18 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Counting</obo:IAO_0000119>
         <obo:IAO_0000600 xml:lang="en">The planned process of finding the number of elements in a finite set of objects.</obo:IAO_0000600>
         <obo:IAO_0000115 xml:lang="en">The planned process of finding the number of elements in a finite set of objects.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DIDEO_00000020 -->
+
+    <owl:Class rdf:about="&obo;DIDEO_00000020">
+        <rdfs:label xml:lang="en">drug-drug interaction</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/dideo.owl</obo:IAO_0000412>
+        <obo:IAO_0000115 xml:lang="en">A biological process that results in a clinically meaningful change to the response of at least one co-administrated drug.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">A clinically meaningful alteration in the exposure and/or response to a drug (object drug) that has occurred as a result of the co-administration of another drug (precipitant drug)Oates JA. Chapter 5. Goodman and Gilman 11th ed (2006):117–36; Hines. Response can refer to either precipitating an adverse event or altering the therapeutic effect of the object drug. Although some DDIs may be used for therapeutic benefit, this paper focuses on those with adverse clinical consequences. (based on the 2013 DDI conference series) / has participant some mechanism.</rdfs:comment>
+        <obo:IAO_0000118 xml:lang="en">DDI</obo:IAO_0000118>
     </owl:Class>
     
 
