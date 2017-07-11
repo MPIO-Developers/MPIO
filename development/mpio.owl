@@ -664,6 +664,24 @@ editor = PRS
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000252 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000252">
+        <rdfs:label xml:lang="en">cohort role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000198"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB:http://www.sceoc.com/glossaryofterms/ # a group of individuals having a statistical factor (as age or class membership) in common in a demographic study, such as a cohort of students.</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB:http://www.thebody.org/content/treat/art2612.html # a group of individuals in a study who share a demographic, clinical, or other statistical characteristic (eg, age, study site).</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB:http://www.uhhospitals.org/tabid/591/Default.aspx # A cohort is a group of people with a common characteristic that is studied over a period of time as part of a scientific or medical investigation.</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/obi.owl</obo:IAO_0000412>
+        <obo:IAO_0000112 xml:lang="en">In statistics and demography, a cohort is a group of subjects - most often humans from a given population - defined by experiencing an event (typically birth) in a particular time span.  Wikipedia &quot;cohort&quot;, Feb 29 2008</obo:IAO_0000112>
+        <obo:IAO_0000117 xml:lang="en">Jennifer Fostel</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">a cohort role is a biological replicate role played by a group of study participants who share a common characteristic of interest to the study.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">cohort role</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
     <owl:Class rdf:about="&obo;OBI_0100026">
