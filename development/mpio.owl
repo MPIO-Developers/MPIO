@@ -630,6 +630,23 @@ editor = PRS
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000220 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000220">
+        <rdfs:label xml:lang="en">reference subject role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000097"/>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/obi.owl</obo:IAO_0000412>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">reference participant</obo:IAO_0000118>
+        <obo:IAO_0000117 xml:lang="en">Jennifer Fostel</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI</obo:IAO_0000119>
+        <obo:IAO_0000112 xml:lang="en">Saline treated rat; one of three identically-treated subjects</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a reference subject  role which inheres in an organism or entity of organismal origin so that the characteristics or responses of the participant playing the reference participant role are used for comparison or reference</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">reference subject role</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
     <owl:Class rdf:about="&obo;OBI_0100026">
