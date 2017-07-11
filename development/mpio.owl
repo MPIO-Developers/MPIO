@@ -111,6 +111,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
     <rdf:Description rdf:about="&obo;IAO_0000116">
+        <rdfs:label>editor note</rdfs:label>
         <rdfs:label xml:lang="en">editor note</rdfs:label>
     </rdf:Description>
     
@@ -289,6 +290,41 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000053">
+        <rdfs:label xml:lang="en">bearer of</rdfs:label>
+        <rdfs:label xml:lang="en">bearer_of</rdfs:label>
+        <rdfs:label xml:lang="en">is bearer of</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/obib.owl</obo:IAO_0000412>
+        <obo:IAO_0000116 xml:lang="en">A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">bearer of</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en">bearer of</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">bearer_of</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">is bearer of</obo:IAO_0000118>
+        <obo:IAO_0000112 xml:lang="en">this apple is bearer of this red color</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this vase is bearer of this fragility</obo:IAO_0000112>
+        <obo:RO_0001900 rdf:resource="&obo;RO_0001901"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002351 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002351">
+        <rdfs:label xml:lang="en">has member</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/obib.owl</obo:IAO_0000412>
+        <obo:IAO_0000119>SIO</obo:IAO_0000119>
+        <obo:IAO_0000115>has member is a mereological relation between a collection and an item.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">has member</obo:IAO_0000111>
+        <obo:RO_0001900 rdf:resource="&obo;RO_0001901"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -412,13 +448,13 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&obo;DIDEO_00000030"/>
+                <owl:someValuesFrom rdf:resource="&obo;DINTO_000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&obo;DINTO_000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;DIDEO_00000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">An acute hypertensive reaction may be a clinical consequence of epinephrine given in the presence of beta-blockade.</obo:IAO_0000112>
@@ -586,6 +622,19 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000112 xml:lang="en">plant</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">virus</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000000 -->
+
+    <owl:Class rdf:about="&obo;PCO_0000000">
+        <rdfs:label xml:lang="en">collection of organisms</rdfs:label>
+        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/obib.owl</obo:IAO_0000412>
+        <obo:IAO_0000118>group of organism</obo:IAO_0000118>
+        <obo:IAO_0000118>organism collection</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">A material entity that consists of two or more organisms, viruses, or viroids.</obo:IAO_0000115>
+        <obo:IAO_0000112>Examples include: population, community, species (meaning the collection of organisms that makes up a species, not the taxonomic rank), and family.</obo:IAO_0000112>
     </owl:Class>
 </rdf:RDF>
 
