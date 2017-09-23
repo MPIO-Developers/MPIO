@@ -17,9 +17,9 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2015-02-23/ontology-metadata.owl"/>
         <rdfs:label xml:lang="en">Minimum PDDI (Potential Drug-Drug Interaction) Information Ontology</rdfs:label>
         <dc:creator xml:lang="en">Maria Herrero-Zazo</dc:creator>
-        <owl:versionInfo xml:lang="en">development version 2017-09-21</owl:versionInfo>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
         <dc:contributor xml:lang="en">Richard D. Boyce</dc:contributor>
+        <owl:versionInfo xml:lang="en">development version 2017-09-23</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -560,9 +560,10 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000112 xml:lang="en">“Both corticosteroids and aldosterone antagonists have been shown to substantially increase the risk of UGIB in patients on NSAIDs, with relative risks of 12.8 and 11 respectively compared to a risk of 4.3 with NSAIDs alone (Masclee et al. Gastroenterology. 2014;147:784-92.)”</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is about factors known to affect the pharmacodynamics or pharmacokinetics of a drug.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">contextual information/modifying factors</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">modifying factors information</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxkZGlrcmFuZGlyfGd4OjUzNzBkOGYzN2NkYWQ3OWY</obo:IAO_0000119>
         <obo:MPIO_0000001 xml:lang="en">Factors such as patient age, patient health conditions, treatment dosage form, or concurrent medications that might alter the risk of a drug-drug interaction clinical consequence or its seriousness.</obo:MPIO_0000001>
-        <rdfs:label xml:lang="en">modifying factors information</rdfs:label>
+        <rdfs:label xml:lang="en">medical context information</rdfs:label>
     </owl:Class>
     
 
