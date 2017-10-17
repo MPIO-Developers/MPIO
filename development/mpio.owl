@@ -584,6 +584,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://purl.obolibrary.org/obo/DINTO_000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DIDEO_00000125"/>
         <purl:Definition xml:lang="en">A clinically relevant DDI effect is a DDI Effect that has clinical relevance for the patient clinical status or therapeutic outcome.</purl:Definition>
         <obo2:Synonym xml:lang="en">significant DDI effect</obo2:Synonym>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/DINTO.owl</obo:IAO_0000412>
