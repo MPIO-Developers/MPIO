@@ -505,6 +505,18 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DIDEO_00000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DIDEO_00000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115 xml:lang="en">A biological process that is the result of a drug-drug interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/dideo.owl</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">drug-drug interaction effect</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DINTO_000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000003">
