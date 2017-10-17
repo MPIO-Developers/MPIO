@@ -495,9 +495,12 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://purl.obolibrary.org/obo/DIDEO_00000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DIDEO_00000030">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An entity that is the result of a drug-drug interaction.</obo:IAO_0000115>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/dideo.owl</obo:IAO_0000412>
-        <rdfs:label xml:lang="en">drug-drug interaction effect</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete_drug-drug interaction effect</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
