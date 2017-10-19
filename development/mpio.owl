@@ -15,11 +15,11 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mpio/dev/mpio.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2015-02-23/ontology-metadata.owl"/>
+        <owl:versionInfo xml:lang="en">development version 2017-10-18</owl:versionInfo>
         <rdfs:label xml:lang="en">Minimum PDDI (Potential Drug-Drug Interaction) Information Ontology</rdfs:label>
         <dc:creator xml:lang="en">Maria Herrero-Zazo</dc:creator>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
         <dc:contributor xml:lang="en">Richard D. Boyce</dc:contributor>
-        <owl:versionInfo xml:lang="en">development version 2017-10-17</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -657,7 +657,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DIDEO_00000030"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DIDEO_00000125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
