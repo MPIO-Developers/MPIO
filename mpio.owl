@@ -13,14 +13,14 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mpio/dev/mpio.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mpio/2018-01-11/mpio.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mpio.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mpio/2018-01-12/mpio.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2015-02-23/ontology-metadata.owl"/>
+        <owl:versionInfo xml:lang="en">release version 2018-01-12</owl:versionInfo>
         <rdfs:label xml:lang="en">Minimum PDDI (Potential Drug-Drug Interaction) Information Ontology</rdfs:label>
         <dc:creator xml:lang="en">Maria Herrero-Zazo</dc:creator>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
         <dc:contributor xml:lang="en">Richard D. Boyce</dc:contributor>
-        <owl:versionInfo xml:lang="en">release version 2018-01-11</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -714,6 +714,12 @@ Request that IAO either clarify these or change definitions not to use them</rdf
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is about changes in the patient health status from baseline that can be observed or measured by a clinician or be reported by the patient.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxkZGlrcmFuZGlyfGd4OjdhOGVkMzY5MzgxNzkw</obo:IAO_0000119>
         <obo:MPIO_0000001 xml:lang="en">Changes in patient health status from baseline that can be observed or measured by a clinician or reported by a patient.</obo:MPIO_0000001>
