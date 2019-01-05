@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/mpio/dev/mpio.owl/"
-     xml:base="http://purl.obolibrary.org/obo/mpio/dev/mpio.owl/"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/mpio.owl/"
+     xml:base="http://purl.obolibrary.org/obo/mpio.owl/"
      xmlns:obo2="http://purl.obolibrary.org/obo#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/"
@@ -14,13 +14,12 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mpio.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mpio/2018-01-12/mpio.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2015-02-23/ontology-metadata.owl"/>
-        <owl:versionInfo xml:lang="en">release version 2018-01-12</owl:versionInfo>
         <rdfs:label xml:lang="en">Minimum PDDI (Potential Drug-Drug Interaction) Information Ontology</rdfs:label>
         <dc:creator xml:lang="en">Maria Herrero-Zazo</dc:creator>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
         <dc:contributor xml:lang="en">Richard D. Boyce</dc:contributor>
+        <owl:versionInfo xml:lang="en">release version 2019-01-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1065,7 +1064,7 @@ Blonk, Maren, et al. &quot;Pharmacokinetic Drug–Drug Interaction Study Between
     <!-- http://purl.obolibrary.org/obo/MPIO_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000112 xml:lang="en">All the treatment-emergent adverse events were mild. Mirabegron 50 mg was considered to be safe and well tolerated when coadministered with tolterodine 4 mg in healthy postmenopausal female volunteers.
 
 Nomura, Yuki, et al. &quot;Pharmacokinetic drug interaction study between overactive bladder drugs mirabegron and tolterodine in Japanese healthy postmenopausal females.&quot; Drug Metabolism and Pharmacokinetics 31.6 (2016): 411-416.</obo:IAO_0000112>
@@ -1079,8 +1078,20 @@ Hsu, Chih-Wei, et al. &quot;Neurotoxicity and nephrotoxicity caused by combined 
 
 Regan, Christopher P., et al. &quot;Assessment of the clinical cardiac drug‐drug interaction associated with the combination of hepatitis C virus nucleotide inhibitors and amiodarone in guinea pigs and rhesus monkeys.&quot; Hepatology 64.5 (2016): 1430-1441.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An information content entity about the intensity of a clinical consequence of a drug-drug interaction.</obo:IAO_0000115>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
         <obo:MPIO_0000001 xml:lang="en">The intensity of a drug-drug interaction clinical consequence.</obo:MPIO_0000001>
+        <rdfs:comment>Severity is a term that is too similar to seriousness possibly causing
+confusion when communicating with clinicians. Moreover, seriousness
+(like the related term criticality) describes a POTENTIAL impact,
+whereas severity characterizes a reaction that has been realized in an
+individual. Since MPIO focuses on potential drug-drug interactions, it
+cannot include an attribute (severity) that is describing a realized
+reaction because you are then no longer in the realm of the potential.
+Finally, the W3C community workgroup that worked on the minimum
+information model for potential drug-drug interactions greatly preferred
+the use of an operational classification of risk to a severity rating. Hence, it was obsoleted as a failed exploratory term for the MPIO domain.</rdfs:comment>
         <rdfs:label xml:lang="en">severity information</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
