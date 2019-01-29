@@ -1253,6 +1253,14 @@ Xu, Zhenhua, Hugh M. Davis, and Honghui Zhou. &quot;Clinical impact of concomita
 Blonk, Maren, et al. &quot;Pharmacokinetic Drug–Drug Interaction Study Between Raltegravir and Atorvastatin 20 mg in Healthy Volunteers.&quot; JAIDS Journal of Acquired Immune Deficiency Syndromes 69.1 (2015): 44-51.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An information content entity that reports the degree to which a clinical consequence of a drug-drug interaction results in harm determining the type and speed of clinician intervention needed.</obo:IAO_0000115>
         <obo:MPIO_0000001 xml:lang="en">The degree to which a drug-drug interaction clinical consequence may result in harm and that will determine the type and speed of clinician intervention.</obo:MPIO_0000001>
+        <rdfs:comment xml:lang="en">An event is serious when the patient outcome is: Death, Life-threatening
+Hospitalization (initial or prolonged), disability or permanent damage,
+congenital anomaly/birth Defect, required intervention to prevent
+permanent impairment or damage, in involved other important medical
+events. Source: U.S. Food and Drug Administration. “What is a Serious
+Adverse Event?”
+https://urldefense.proofpoint.com/v2/url?u=http-3A__www.fda.gov_Safety_MedWatch_HowToReport_ucm053087.htm&amp;d=DwIGaQ&amp;c=27AKQ-AFTMvLXtgZ7shZqsfSXu-Fwzpqk4BoASshREk&amp;r=_AhKSLG63uT9j7OK4dL0o2DAco1lYASNsYomMJX92ng&amp;m=akNLTN3AxpBiAQmCa5kBvV98eEf8Pl2M-D5MBaU5ANI&amp;s=i_7V5GfnXHZV_wJ4fPZCRVM66e0ZhKlG86F0WWSbxSY&amp;e= (accessed
+August 19, 2016)</rdfs:comment>
         <rdfs:label xml:lang="en">seriousness information</rdfs:label>
     </owl:Class>
     
