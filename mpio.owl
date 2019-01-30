@@ -14,12 +14,14 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mpio.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mpio/release/2019-01-30/mpio.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2015-02-23/ontology-metadata.owl"/>
         <rdfs:label xml:lang="en">Minimum PDDI (Potential Drug-Drug Interaction) Information Ontology</rdfs:label>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
         <dc:creator xml:lang="en">Maria Herrero-Zazo</dc:creator>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
         <dc:contributor xml:lang="en">Richard D. Boyce</dc:contributor>
-        <owl:versionInfo xml:lang="en">release version 2019-01-05</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">release version 2019-01-30</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -47,6 +49,22 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo#Synonym">
         <rdfs:label xml:lang="en">Synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179">
+        <rdfs:label xml:lang="en">BFO OWL specification label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000180 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180">
+        <rdfs:label xml:lang="en">BFO CLIF specification label</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -96,6 +114,7 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
         <rdfs:label>editor note</rdfs:label>
         <rdfs:label xml:lang="en">editor note</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editor note</rdfs:label>
     </rdf:Description>
     
 
@@ -105,7 +124,6 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
         <rdfs:label>definition editor</rdfs:label>
         <rdfs:label xml:lang="en">definition editor</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition editor</rdfs:label>
         <rdfs:label>term editor</rdfs:label>
         <rdfs:label xml:lang="en">term editor</rdfs:label>
     </rdf:Description>
@@ -126,7 +144,6 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
         <rdfs:label>definition source</rdfs:label>
         <rdfs:label xml:lang="en">definition source</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition source</rdfs:label>
     </rdf:Description>
     
 
@@ -151,7 +168,32 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000600">
+        <rdfs:label>elucidation</rdfs:label>
         <rdfs:label xml:lang="en">elucidation</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000601 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000601">
+        <rdfs:label xml:lang="en">has associated axiom(nl)</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000602 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000602">
+        <rdfs:label xml:lang="en">has associated axiom(fol)</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0010000 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0010000">
+        <rdfs:label xml:lang="en">has axiom label</rdfs:label>
     </rdf:Description>
     
 
@@ -341,6 +383,27 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000117 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000117">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:BFO_0000179>o-has-part</obo:BFO_0000179>
+        <obo:BFO_0000180>hasOccurrentPart</obo:BFO_0000180>
+        <obo:IAO_0000112>[copied from inverse property &apos;part of occurrent&apos;] Mary’s 5th birthday occurrent_part_of Mary’s life</obo:IAO_0000112>
+        <obo:IAO_0000112>[copied from inverse property &apos;part of occurrent&apos;] The process of a footballer’s heart beating once is an occurrent part but not a temporal_part of a game of football.</obo:IAO_0000112>
+        <obo:IAO_0000112>[copied from inverse property &apos;part of occurrent&apos;] the first set of the tennis match occurrent_part_of the tennis match.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">b has_occurrent_part c = Def. c occurrent_part_of b. (axiom label in BFO2 Reference: [007-001])</obo:IAO_0000115>
+        <obo:IAO_0000116>[copied from inverse property &apos;part of occurrent&apos;] BFO 2 Reference: a (continuant or occurrent) part of itself. We appreciate that this is counterintuitive for some users, since it implies for example that President Obama is a part of himself. However it brings benefits in simplifying the logical formalism, and it captures an important feature of identity, namely that it is the limit case of mereological inclusion.</obo:IAO_0000116>
+        <obo:IAO_0000116>[copied from inverse property &apos;part of occurrent&apos;] BFO2 Reference: occurrent</obo:IAO_0000116>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/dideo/release/2017-11-17/dideo.owl</obo:IAO_0000412>
+        <obo:IAO_0000600>[copied from inverse property &apos;part of occurrent&apos;] b occurrent_part_of c =Def. b is a part of c &amp; b and c are occurrents. (axiom label in BFO2 Reference: [003-002])</obo:IAO_0000600>
+        <obo:IAO_0000602>(iff (hasOccurrentPart a b) (occurrentPartOf b a)) // axiom label in BFO2 CLIF: [007-001] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">has occurrent part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
@@ -448,6 +511,24 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000111 xml:lang="en">has participant</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">this blood coagulation has participant this blood clot</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this investigation has participant this investigator</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this process has participant this input material (or this output material)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a relation between a process and a continuant, in which the continuant is somehow involved in the process</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">has_participant</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ro/releases/2018-10-19/ro.owl</obo:IAO_0000412>
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:has_participant</dc:source>
+        <rdfs:label xml:lang="en">has participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002087 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002087">
@@ -527,10 +608,67 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000461 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000461">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a drug product.</obo:IAO_0000115>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000117>William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl</obo:IAO_0000412>
+        <obo:IAO_0000600 xml:lang="en">An identifier that denotes a drug product.</obo:IAO_0000600>
+        <apollo_sv:APOLLO_SV_0000040 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drugId</apollo_sv:APOLLO_SV_0000040>
+        <rdfs:label xml:lang="en">drug identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <obo:BFO_0000179>material</obo:BFO_0000179>
+        <obo:BFO_0000180>MaterialEntity</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">a flame</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a forest fire</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a human being</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a hurricane</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a photon</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a puff of smoke</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a sea wave</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a tornado</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an aggregate of human beings.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an energy wave</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an epidemic</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the undetached arm of a human being</obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Material entities (continuants) can preserve their identity even while gaining and losing material parts. Continuants are contrasted with occurrents, which unfold themselves in successive temporal parts or phases [60</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Object, Fiat Object Part and Object Aggregate are not intended to be exhaustive of Material Entity. Users are invited to propose new subcategories of Material Entity.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here.</obo:IAO_0000116>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl</obo:IAO_0000412>
+        <obo:IAO_0000600 xml:lang="en">A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])</obo:IAO_0000600>
+        <obo:IAO_0000601 xml:lang="en">Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">every entity of which a material entity is continuant part is also a material entity. (axiom label in BFO2 Reference: [021-002])</obo:IAO_0000601>
+        <obo:IAO_0000602>(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] </obo:IAO_0000602>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/019-002"/>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/020-002"/>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/021-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">material entity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DIDEO_00000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DIDEO_00000000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000461"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A potential drug-drug interaction (PDDI) is an information content entity that specifies the possibility of a drug-drug interaction based on either reasonable extrapolation about drug-drug interaction mechanisms or a data item created by clinical studies, clinical observation or physiological experiment.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/dideo.owl</obo:IAO_0000412>
@@ -543,11 +681,46 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DIDEO_00000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DIDEO_00000021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A biological process that results in a clinically meaningful change to the response of at least one co-administrated drug.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">DDI</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/dideo.owl</obo:IAO_0000412>
         <rdfs:comment xml:lang="en">A clinically meaningful alteration in the exposure and/or response to a drug (object drug) that has occurred as a result of the co-administration of another drug (precipitant drug)Oates JA. Chapter 5. Goodman and Gilman 11th ed (2006):117–36; Hines. Response can refer to either precipitating an adverse event or altering the therapeutic effect of the object drug. Although some DDIs may be used for therapeutic benefit, this paper focuses on those with adverse clinical consequences. (based on the 2013 DDI conference series) / has participant some mechanism.</rdfs:comment>
         <rdfs:label xml:lang="en">drug-drug interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DIDEO_00000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DIDEO_00000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DRON_00000001"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A planned process of administering more than one drug to the same individual over a specific time interval.</obo:IAO_0000115>
+        <obo:IAO_0000232 xml:lang="en">This class currently does not have a restriction. One candidate restriction is a necessary condition: &apos;has participant at some time&apos; min 2 &apos;drug product&apos;. I was not able to find an OWL reasoner for Protege 5 that supports cardinality restrictions.</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/dideo/release/2017-11-17/dideo.owl</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">An instance of this occurs when at least two or more drugs are taken in a specific time interval and the individual time interval for each drug administration overlaps with the other drug&apos;s or drugs&apos; time interval(s). (SG1)</rdfs:comment>
+        <rdfs:label xml:lang="en">drug co-administration</rdfs:label>
     </owl:Class>
     
 
@@ -597,6 +770,19 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DIDEO_00000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DIDEO_00000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a set of drug identifiers.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/dideo/dev/dideo.owl</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">Term and definition provided by Richard D. Boyce.</rdfs:comment>
+        <rdfs:label xml:lang="en">drug concept set identifier</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DINTO_000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000003">
@@ -615,6 +801,18 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo2:Synonym xml:lang="en">significant DDI effect</obo2:Synonym>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/DINTO.owl</obo:IAO_0000412>
         <rdfs:label xml:lang="en">clinically relevant DDI effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DRON_00000001">
+        <obo:IAO_0000115 xml:lang="en">the role of a material entity to prevent, diagnose, treat, or study disease and/or its effects</obo:IAO_0000115>
+        <obo:IAO_0000117>William Hogan</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/dron.owl</obo:IAO_0000412>
+        <dc:creator>William Hogan</dc:creator>
+        <rdfs:label xml:lang="en">clinical drug role</rdfs:label>
     </owl:Class>
     
 
@@ -1056,6 +1254,14 @@ Xu, Zhenhua, Hugh M. Davis, and Honghui Zhou. &quot;Clinical impact of concomita
 Blonk, Maren, et al. &quot;Pharmacokinetic Drug–Drug Interaction Study Between Raltegravir and Atorvastatin 20 mg in Healthy Volunteers.&quot; JAIDS Journal of Acquired Immune Deficiency Syndromes 69.1 (2015): 44-51.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An information content entity that reports the degree to which a clinical consequence of a drug-drug interaction results in harm determining the type and speed of clinician intervention needed.</obo:IAO_0000115>
         <obo:MPIO_0000001 xml:lang="en">The degree to which a drug-drug interaction clinical consequence may result in harm and that will determine the type and speed of clinician intervention.</obo:MPIO_0000001>
+        <rdfs:comment xml:lang="en">An event is serious when the patient outcome is: Death, Life-threatening
+Hospitalization (initial or prolonged), disability or permanent damage,
+congenital anomaly/birth Defect, required intervention to prevent
+permanent impairment or damage, in involved other important medical
+events. Source: U.S. Food and Drug Administration. “What is a Serious
+Adverse Event?”
+https://urldefense.proofpoint.com/v2/url?u=http-3A__www.fda.gov_Safety_MedWatch_HowToReport_ucm053087.htm&amp;d=DwIGaQ&amp;c=27AKQ-AFTMvLXtgZ7shZqsfSXu-Fwzpqk4BoASshREk&amp;r=_AhKSLG63uT9j7OK4dL0o2DAco1lYASNsYomMJX92ng&amp;m=akNLTN3AxpBiAQmCa5kBvV98eEf8Pl2M-D5MBaU5ANI&amp;s=i_7V5GfnXHZV_wJ4fPZCRVM66e0ZhKlG86F0WWSbxSY&amp;e= (accessed
+August 19, 2016)</rdfs:comment>
         <rdfs:label xml:lang="en">seriousness information</rdfs:label>
     </owl:Class>
     
@@ -1092,6 +1298,40 @@ information model for potential drug-drug interactions greatly preferred
 the use of an operational classification of risk to a severity rating. Hence, it was obsoleted as a failed exploratory term for the MPIO domain.</rdfs:comment>
         <rdfs:label xml:lang="en">severity information</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPIO_0000111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPIO_0000111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112 xml:lang="en">Risk assessment based upon clinical management of drug interactions rather than clinical significance alone.
+
+Example using ORCA (see below for more about ORCA):
+
+Warfarin - NSAIDs The NSAIDs is topical diclofenac: Recommended Action: No special precautions The NSAID is NOT topical diclofenac but the patient is concomitantly taking a proton pump inhibitor or misoprostol: Recommended Action: Assess risk and take action if necessary
+
+The NSAID is NOT topical diclofenac, the patient is NOT concomitantly taking a proton pump inhibitor or misoprostol, and the patient has one or more of the following risk factors: History of upper gastrointestinal bleeding (UGIB) or peptic ulcer or age &gt; 65 years old Recommended Action: Use only if benefit outweighs risk
+
+Concomitantly taking systemic corticosteroids, aldosterone antagonists, or high dose or multiple NSAID Recommended Action: Use only if benefit outweighs risk
+
+Example Operational Classification Criteria:
+
+Avoid Combination (Risk of combination outweighs benefit)
+
+Usually Avoid Combination (Use only under special circumstances)
+- Interactions for which there are clearly preferable alternatives for one or both drugs.
+- Interactions to avoid by using an alternative drug or other therapy unless the benefit is judged to outweigh the increased risk.
+
+Minimize Risk (Assess risk and take one or more of the following actions if needed)
+- Consider alternatives: Alternatives may be available that are less likely to interact.
+- Circumvent: Take action to minimize the interaction (without avoiding combination).
+Monitor: Early detection can minimize the risk of an adverse</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is about some risk management (http://purl.obolibrary.org/obo/ERO_0000715) that has as a specified input an instance of a potential drug-drug interaction (http://purl.obolibrary.org/obo/DIDEO_00000000).</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:MPIO_0000001 xml:lang="en">A risk classification that suggests specific management criteria for a specific patient context.</obo:MPIO_0000001>
+        <rdfs:label xml:lang="en">operational classification statement</rdfs:label>
     </owl:Class>
     
 
